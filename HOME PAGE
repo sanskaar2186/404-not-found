@@ -24,6 +24,8 @@
       height: 100vh;
       filter: brightness(80%);
       position: relative;
+      background-size: cover;
+      background-position: center;
     }
 
     nav {
@@ -125,20 +127,9 @@
       gap: 20px;
     }
 
-    .video-section .play-btn {
-      width: 60px;
-      height: 60px;
+    .video-section iframe {
+      border-radius: 10px;
       border: 2px solid white;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-    }
-
-    .video-section .play-btn::before {
-      content: '▶';
-      font-size: 20px;
     }
 
     .video-section .text {
@@ -252,8 +243,12 @@
     <button class="view-program">VIEW PROGRAM</button>
   </div>
 
+  <!-- EMBEDDED YOUTUBE VIDEO -->
   <div class="video-section">
-    <div class="play-btn" onclick="playVideo()"></div>
+    <iframe width="300" height="180" src="https://www.youtube.com/embed/Xj4E0Zry6K4"
+      title="Mountain Climbing Video" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
     <div class="text">
       <h3>Watch Videos</h3>
       <p>Enjoy — travel is the only thing you buy that makes you richer.</p>
@@ -266,33 +261,10 @@
   </div>
 
   <div class="social-icons">
-    <!-- Facebook -->
-    <a href="https://facebook.com" target="_blank">
-      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 320 512" fill="#1877F2">
-        <path d="M279.14 288l14.22-92.66h-88.91V127.92c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S293.48 0 262.36 0c-73.22 0-121.07 44.38-121.07 124.72v70.62H89.09V288h52.2v224h100.2V288z"/>
-      </svg>
-    </a>
-
-    <!-- Instagram -->
-    <a href="https://instagram.com" target="_blank">
-      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 448 512" fill="#E1306C">
-        <path d="M224,202.66A53.34,53.34,0,1,0,277.34,256,53.38,53.38,0,0,0,224,202.66Zm124.71-41a54,54,0,0,0-30.72-30.72C294.5,121,224,120,224,120s-70.5,1-93.99,10.94a54,54,0,0,0-30.72,30.72C88.06,148.5,88,176,88,176s-1,70.5,10.94,93.99a54,54,0,0,0,30.72,30.72C153.5,312,224,312,224,312s70.5-1,93.99-10.94a54,54,0,0,0,30.72-30.72C359.94,254.5,360,224,360,224S361,153.5,348.71,161.66Z"/>
-      </svg>
-    </a>
-
-    <!-- LinkedIn -->
-    <a href="https://linkedin.com" target="_blank">
-      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 448 512" fill="#0A66C2">
-        <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.8 0 54.1 0 24.3 24.3 0 54.09 0s54.1 24.3 54.1 54.1c0 29.7-24.3 54-54.4 54zM447.9 448h-92.7V302.4c0-34.7-12.4-58.4-43.4-58.4-23.6 0-37.6 15.9-43.7 31.3-2.2 5.3-2.8 12.6-2.8 20v152.7h-92.8s1.2-247.8 0-273.7h92.8v38.8c12.3-18.9 34.3-45.8 83.6-45.8 61 0 106.8 39.8 106.8 125.4V448z"/>
-      </svg>
-    </a>
+    <a href="https://facebook.com" target="_blank">📘</a>
+    <a href="https://instagram.com" target="_blank">📸</a>
+    <a href="https://linkedin.com" target="_blank">💼</a>
   </div>
-
-  <script>
-    function playVideo() {
-      alert('Video player will open here.');
-    }
-  </script>
 
 </body>
 </html>
