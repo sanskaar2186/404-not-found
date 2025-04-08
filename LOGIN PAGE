@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>No Plans, Just Planes - Login</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: url('C:/Users/ayman/OneDrive/Pictures/Screenshots/Screenshot%202025-04-07%20220928.png') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: #000;
+    }
+
+    .container {
+      text-align: center;
+      width: 100%;
+      max-width: 400px;
+      padding: 40px;
+      background-color: rgba(255, 255, 255, 0.85);
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .logo img {
+      height: 28px;
+      margin-right: 8px;
+    }
+
+    .headline {
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .subtext {
+      font-size: 14px;
+      color: #444;
+      margin-bottom: 30px;
+    }
+
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 12px 15px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    .password-wrapper {
+      position: relative;
+    }
+
+    .toggle-password {
+      position: absolute;
+      right: 15px;
+      top: 14px;
+      cursor: pointer;
+    }
+
+    .options {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 12px;
+      margin-bottom: 20px;
+    }
+
+    .login-btn {
+      width: 100%;
+      background-color: #ff6600;
+      color: #fff;
+      border: none;
+      padding: 14px 0;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .login-btn:hover {
+      background-color: #e65c00;
+    }
+
+    .signup {
+      margin-top: 16px;
+      font-size: 13px;
+    }
+
+    .signup a {
+      color: #ff6600;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    
+    .image{
+      width: 30px;
+      border-radius: 40px;
+    } 
+
+    .signup a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="headline">Don't just imagine paradise,<br/>Experience it!</div>
+    <div class="subtext">We'll help you plan your dream escape.</div>
+    <div class="logo">
+      <img src="https://st3.depositphotos.com/1105977/32206/i/450/depositphotos_322069858-stock-photo-passengers-commercial-airplane-flying-above.jpg" alt="Screenshot" class="image" />
+      <h2 style="margin: 0; font-size: 18px;">no plans, just planes</h2>
+    </div>
+    
+    <form>
+      <input type="email" placeholder="Email ID" required />
+      <div class="password-wrapper">
+        <input type="password" id="password" placeholder="Password" required />
+        <span class="toggle-password" onclick="togglePassword()">👁️</span>
+      </div>
+      <div class="options">
+        <label><input type="checkbox" /> Remember me</label>
+        <a href="#" style="text-decoration: none; color: #555;">Forgot Password?</a>
+      </div>
+      <button type="submit" class="login-btn">Login</button>
+    </form>
+    <div class="signup">
+      Don’t have an account? <a href="#">Sign up!</a>
+    </div>
+  </div>
+
+  <script>
+    function togglePassword() {
+      const pwdField = document.getElementById("password");
+      if (pwdField.type === "password") {
+        pwdField.type = "text";
+      } else {
+        pwdField.type = "password";
+      }
+    }
+  </script>
+</body>
+</html>
