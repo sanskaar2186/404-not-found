@@ -13,10 +13,11 @@
       box-sizing: border-box;
     }
 
-    body, html {
-      font-family: 'Raleway', sans-serif;
-      color: rgb(224, 237, 223);
-      height: 100%;
+    body {
+      background: url('https://plus.unsplash.com/premium_photo-1679758630055-99ebb2df7d77?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDI2fHx8ZW58MHx8fHx8');
+      height: 100vh;
+      filter: brightness(80%);
+      position: relative;
     }
 
     body {
